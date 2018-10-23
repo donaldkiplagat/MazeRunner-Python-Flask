@@ -1,0 +1,68 @@
+ #question2-1, #question2-2, #question2-3{
+  display:none;
+}
+ #question3-0, #question3-1, #question3-2, #question3-3, #question3-4, #question3-5, #question3-6, #question3-7{
+  display:none;
+}
+#question4-0, #question4-1, #question4-2, #question4-3, #question4-4, #question4-5, #question4-6, #question4-7,
+#question4-8, #question4-9, #question4-10, #question4-11, #question4-12, #question4-13, #question4-14, #question4-15 {
+  display:none;
+}
+
+#question5-0, #question5-1, #question5-2, #question5-3, #question5-4, #question5-5, #question5-6, #question5-7,
+#question5-8, #question5-9, #question5-10, #question5-11, #question5-12, #question5-13, #question5-14, #question5-15,
+#question5-16, #question5-17, #question5-18, #question5-19, #question5-20, #question5-21, #question5-22, #question5-22,
+#question5-23, #question5-24, #question5-25, #question5-26, #question5-27, #question5-28, #question5-29, #question5-30,
+#question5-31,#win{
+  display:none;
+}
+.panel{
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  border-radius: 25px;
+  border: 2px;
+  padding: 20px;
+  background-color: rgba(0,0,0, 0.7);
+
+
+}
+.jumbotron{
+  margin-bottom: 0px;
+  height: 195px;
+  width: 550px;
+  margin: auto;
+
+  /* background-image: url(../img/jumbotron.jpg); */
+  text-align: center;
+  font-size: 21px;
+  background-position: 0% 51%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#gaming{
+  /* background-image: url('../img/thumb-1920-413551.png'); */
+  height:950px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+  text-align: center;
+  font-size: 21px;
+}
+.container{
+
+}
+button{
+  font-size: 20px;
+}
+h2{
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h4{
+  font-size: 30px;
+}

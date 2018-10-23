@@ -1,0 +1,420 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/gaming.css')}}">
+    <script  src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+    <script src= "{{url_for('static',filename='js/script.js')}}"></script>
+    <link rel="shortcut icon" href="https://icon2.kisspng.com/20180412/xiw/kisspng-paper-sunset-shimmer-quill-cutie-mark-crusaders-bo-write-5acf53a3231648.3205577215235368031437.jpg">
+{% endblock %}
+
+{% block content %}
+  <div class="jumbotron">
+
+  </div>
+  <br><br><br><br><br>
+  <div class="text-center"id="gaming">
+
+    <div class="panel panel-info panel-height">
+      <button id="quit" onclick="location.href='index.html'"  class="btn-danger btn-lg">Quit</button>
+
+
+  <div id="question1-0">
+
+    <p>When was Play Station first announced?</p>
+    <button id="quest1-0" class="btn-danger btn-lg">1990</button>
+    <button id="quest1-1" class="btn-danger btn-lg">1995</button>
+    <button id="quest1-2" class="btn-danger btn-lg">1988</button>
+    <button id="quest1-3" class="btn-danger btn-lg">1991</button>
+  </div>
+
+  <div id="question2-0">
+
+    <p>What was pac man's original name?</p>
+    <button id="quest2-0" class="btn-danger btn-lg">Puck man</button>
+    <button id="quest2-1" class="btn-danger btn-lg">Pack man</button>
+  </div>
+  <div id="question2-1">
+
+  <p>Who is the lead character in Watch Dogs 2</p>
+  <button id="quest2-2" class="btn-danger btn-lg">Sitara</button>
+  <button id="quest2-3" class="btn-danger btn-lg">Marcus</button>
+</div>
+  <div id="question2-2">
+
+  <p>What does SEGA actually stand for?</p>
+  <button id="quest2-4" class="btn-danger btn-lg">Service Games</button>
+  <button id="quest2-5" class="btn-danger btn-lg">Sonic Entertainment Game </button>
+</div>
+  <div id="question2-3">
+
+  <p>Who voices Kratos in God of War?</p>
+  <button id="quest2-6" class="btn-danger btn-lg">Terrence 'T.C.' Carson.</button>
+  <button id="quest2-7" class="btn-danger btn-lg">Troy Baker</button>
+</div>
+
+
+  <div id="question3-0">
+
+
+  <p>Which of Hades' relative did Kratos murder?/</p>
+  <button id="quest3-0" class="btn-danger btn-lg">His niece</button>
+  <button id="quest3-1" class="btn-danger btn-lg">His sister</button>
+</div>
+  <div id="question3-1">
+
+  <p> When was Mario born?</p>
+  <button id="quest3-2" class="btn-danger btn-lg">1983</button>
+  <button id="quest3-3" class="btn-danger btn-lg">1981</button>
+</div>
+<div id="question3-2">
+
+  <p>What is Mario's last name?</p>
+  <button id="quest3-4" class="btn-danger btn-lg">Mattia</button>
+  <button id="quest3-5" class="btn-danger btn-lg">Segale</button>
+  </div>
+  <div id="question3-3">
+
+  <p>What are the mushroom shaped bad guys in Mario called?</p>
+  <button id="quest3-6" class="btn-danger btn-lg">Goomba</button>
+  <button id="quest3-7" class="btn-danger btn-lg">Koopa Troopa</button>
+</div>
+<div id="question3-4">
+
+  <p>Which of the Assassin's Creed Series takes place in Ptolemaic Egypt?</p>
+  <button id="quest3-8" class="btn-danger btn-lg">10th Game</button>
+  <button id="quest3-9" class="btn-danger btn-lg">9th Game</button>
+  </div>
+  <div id="question3-5">
+
+  <p>Which year was Minecraft realesed?</p>
+  <button id="quest3-10" class="btn-danger btn-lg">2005</button>
+  <button id="quest3-11" class="btn-danger btn-lg">2009</button>
+</div>
+<div id="question3-6">
+
+  <p>Who kidnaps Catwoman in Arkham Knight?</p>
+  <button id="quest3-12" class="btn-danger btn-lg">Riddler</button>
+  <button id="quest3-13" class="btn-danger btn-lg">Joker</button>
+  </div>
+  <div id="question3-7">
+
+  <p>Which PC game was delayed in the realease because of a hidden developers ass?</p>
+  <button id="quest3-14" class="btn-danger btn-lg">Halo 2</button>
+  <button id="quest3-15" class="btn-danger btn-lg">Halo 3</button>
+</div>
+
+  <div id="question4-0">
+
+
+  <p>Which planet size is approximately same as the Minecraft?</p>
+  <button id="quest4-0" class="btn-danger btn-lg">Mars</button>
+  <button id="quest4-1" class="btn-danger btn-lg">Neptune</button>
+</div>
+<div id="question4-1">
+
+  <p>What is the name of the princess whom Mario reapetedly stops Bowser from kidnapping?</p>
+  <button id="quest4-2" class="btn-danger btn-lg">Princess Peach</button>
+  <button id="quest4-3" class="btn-danger btn-lg">Princess Leya</button>
+  </div>
+  <div id="question4-2">
+
+  <p>Who is the creator of ps4?</p>
+  <button id="quest4-4" class="btn-danger btn-lg">bungie</button>
+  <button id="quest4-5" class="btn-danger btn-lg">Cerny</button>
+</div>
+<div id="question4-3">
+
+  <p>Choose the wrong answer</p>
+  <p>The objective of chess is to capture which regal piece?</p>
+  <button id="quest4-6" class="btn-danger btn-lg">King</button>
+  <button id="quest4-7" class="btn-danger btn-lg">Queen</button>
+  </div>
+  <div id="question4-4">
+
+  <p>Which space is diagonally opposite from Go on a standaed monopoly game?</p>
+  <button id="quest4-8" class="btn-danger btn-lg">Go to jail</button>
+  <button id="quest4-9" class="btn-danger btn-lg">Free Parking</button>
+</div>
+<div id="question4-5">
+
+  <p>What Pokémon is the 151st and final entry of the original Pokédex?</p>
+  <button id="quest4-10" class="btn-danger btn-lg">Mew</button>
+  <button id="quest4-11" class="btn-danger btn-lg">Mewtwo</button>
+  </div>
+  <div id="question4-6">
+
+  <p>Which Minecraft ore is required to craft the most durable tools?</p>
+  <button id="quest4-12" class="btn-danger btn-lg">Gold</button>
+  <button id="quest4-13" class="btn-danger btn-lg">Diamond</button>
+</div>
+<div id="question4-7">
+
+  <p>Which Grand Theft Auto game is set in a fictional version of New York City?</p>
+  <button id="quest4-14" class="btn-danger btn-lg">GTA IV</button>
+  <button id="quest4-15" class="btn-danger btn-lg">GTA V</button>
+  </div>
+  <div id="question4-8">
+
+  <p>Choose the wrong answer</p>
+  <p>The Dreamcast is a games console released by which company?</p>
+  <button id="quest4-16" class="btn-danger btn-lg">Sega</button>
+  <button id="quest4-17" class="btn-danger btn-lg">Atari</button>
+</div>
+<div id="question4-9">
+
+  <p>Choose the wrong answer</p>
+  <p>In what Series were Dracula and The Grim Reaper recurring Villians?</p>
+  <button id="quest4-18" class="btn-danger btn-lg">Castlevania</button>
+  <button id="quest4-19" class="btn-danger btn-lg">Soul Reaver</button>
+  </div>
+  <div id="question4-10">
+
+  <p>What is the best selling console of all time?</p>
+  <button id="quest4-20" class="btn-danger btn-lg">PS 2</button>
+  <button id="quest4-21" class="btn-danger btn-lg">Nintendo DS</button>
+</div>
+<div id="question4-11">
+
+  <p>Which publisher was responsible for games such as Rock & Roll Racing, Blackthorne & The Lost Vikings?</p>
+  <button id="quest4-22" class="btn-danger btn-lg">Konami</button>
+  <button id="quest4-23" class="btn-danger btn-lg">Blizzard</button>
+  </div>
+  <div id="question4-12">
+
+  <img src="img/ef5fcea5-407b-42dd-8ae5-d29fe53c008b.jpg" alt="">
+  <p>What is the name of this gaming character?</p>
+  <button id="quest4-24" class="btn-danger btn-lg">Psycho Mantis</button>
+  <button id="quest4-25" class="btn-danger btn-lg">Gray Fox</button>
+  </div>
+  <div id="question4-13">
+
+  <p>In Uncharted 4, which PlayStation 1 title does Nathan Drake play?</p>
+  <button id="quest4-26" class="btn-danger btn-lg">Mortal Kombat</button>
+  <button id="quest4-27" class="btn-danger btn-lg">Crash Bandicoot</button>
+</div>
+<div id="question4-14">
+
+  <p>What was the code name for the "Nintendo Gamecube"??</p>
+  <button id="quest4-28" class="btn-danger btn-lg">Dolphin</button>
+  <button id="quest4-29" class="btn-danger btn-lg">Eagle</button>
+</div>
+<div id="question4-15">
+
+  <p>In the Fallout series, on which date did The Great War happen?</p>
+  <button id="quest4-30" class="btn-danger btn-lg">October 23rd, 2077</button>
+  <button id="quest4-31" class="btn-danger btn-lg">October 23rd, 2080</button>
+</div>
+
+  <div id="question5-0">
+
+
+  <p>Who are the original creators of Rachet & Clank?</p>
+  <button id="quest5-0" class="btn-danger btn-lg">Insomniac Games</button>
+  <button id="quest5-1" class="btn-danger btn-lg">Square Enix</button>
+</div>
+<div id="question5-1">
+
+  <p>In Pokemon Red & Blue, what is the name of HM05?</p>
+  <button id="quest5-2" class="btn-danger btn-lg">Flash</button>
+  <button id="quest5-3" class="btn-danger btn-lg">Defog</button>
+</div>
+<div id="question5-2">
+
+  <p>In the video game "Metal Gear Solid", what did Revolver Ocelot consider the greatest handgun ever made?</p>
+  <button id="quest5-4" class="btn-danger btn-lg">Colt Single Action Army</button>
+  <button id="quest5-5" class="btn-danger btn-lg">Desert Eagle</button>
+</div>
+<div id="question5-3">
+
+  <p>In the video game "Metal Gear Solid", what did Revolver Ocelot consider the greatest handgun ever made?/</p>
+  <button id="quest5-6" class="btn-danger btn-lg">Shoot em up</button>
+  <button id="quest5-7" class="btn-danger btn-lg">Space Invaders</button>
+</div>
+<div id="question5-4">
+
+  <p>In the video game "Transistor", "Red" is the name of the main character?</p>
+  <button id="quest5-8" class="btn-danger btn-lg">True</button>
+  <button id="quest5-9" class="btn-danger btn-lg">False</button>
+</div>
+<div id="question5-5">
+
+  <p>Resident Evil 4 was originally meant to be a Nintendo GameCube exclusive?</p>
+  <button id="quest5-10" class="btn-danger btn-lg">False</button>
+  <button id="quest5-11" class="btn-danger btn-lg">True</button>
+</div>
+<div id="question5-6">
+
+  <p>In the "Halo" series, what is the name of the race of aliens humans refer to as "Grunts"?</p>
+  <button id="quest5-12" class="btn-danger btn-lg">Unggoy</button>
+  <button id="quest5-13" class="btn-danger btn-lg">Covenant</button>
+</div>
+<div id="question5-7">
+
+  <p>Who composed the soundtrack for the game VVVVVV?</p>
+  <button id="quest5-14" class="btn-danger btn-lg">Magnus Pålsson</button>
+  <button id="quest5-15" class="btn-danger btn-lg">Cavanagh</button>
+</div>
+<div id="question5-8">
+
+  <p>Who created the digital distribution platform Steam?</p>
+  <button id="quest5-16" class="btn-danger btn-lg">Toby</button>
+  <button id="quest5-17" class="btn-danger btn-lg">Valve</button>
+</div>
+<div id="question5-9">
+
+  <p>Luigi is taller than Mario?</p>
+  <button id="quest5-18" class="btn-danger btn-lg">False</button>
+  <button id="quest5-19" class="btn-danger btn-lg">True</button>
+</div>
+<div id="question5-10">
+
+  <p>Who created the indie adventure game "Night in the Woods"?</p>
+  <button id="quest5-20" class="btn-danger btn-lg">Alec Holowka</button>
+  <button id="quest5-21" class="btn-danger btn-lg">Toby Fox</button>
+</div>
+<div id="question5-11">
+
+  <p>When was the Sega Genesis released in Japan?</p>
+  <button id="quest5-22" class="btn-danger btn-lg">1986</button>
+  <button id="quest5-23" class="btn-danger btn-lg">1988</button>
+</div>
+<div id="question5-12">
+
+  <p>Which of these weapons is NOT available to the Terrorist team in the game, "Counter-Strike: Global Offensive"?</p>
+  <button id="quest5-24" class="btn-danger btn-lg">SCAR-20</button>
+  <button id="quest5-25" class="btn-danger btn-lg">Famas</button>
+</div>
+<div id="question5-13">
+
+  <p>Metal Gear Solid V: The Phantom Pain runs on the what Engine?</p>
+  <button id="quest5-26" class="btn-danger btn-lg">Cry</button>
+  <button id="quest5-27" class="btn-danger btn-lg">Fox</button>
+</div>
+<div id="question5-14">
+
+  <p>Solid Snake is actually a clone from the DNA of Big Boss in the Metal Gear Solid series' history?</p>
+  <button id="quest5-28" class="btn-danger btn-lg">True</button>
+  <button id="quest5-29" class="btn-danger btn-lg">False</button>
+</div>
+<div id="question5-15">
+
+  <p>Which operation in "Tom Clancy's Rainbow Six Siege" introduced the "Skyscraper" map?</p>
+  <button id="quest5-30" class="btn-danger btn-lg">Red Crow</button>
+  <button id="quest5-31" class="btn-danger btn-lg">Skull Rain</button>
+</div>
+<div id="question5-16">
+
+  <p>What is the default alias that Princess Garnet goes by in Final Fantasy IX?</p>
+  <button id="quest5-32" class="btn-danger btn-lg">Dagger</button>
+  <button id="quest5-33" class="btn-danger btn-lg">Spear</button>
+</div>
+<div id="question5-17">
+
+  <p>In what year was the original Sonic the Hedgehog game released?</p>
+  <button id="quest5-34" class="btn-danger btn-lg">1993</button>
+  <button id="quest5-35" class="btn-danger btn-lg">1991</button>
+</div>
+<div id="question5-18">
+
+  <p>How many times do you fight Gilgamesh in "Final Fantasy 5"?</p>
+  <button id="quest5-36" class="btn-danger btn-lg">4</button>
+  <button id="quest5-37" class="btn-danger btn-lg">6</button>
+</div>
+<div id="question5-19">
+
+  <p>Which country was Eliza "Ash" Cohen from "Tom Clancy's Rainbow Six Siege" born in?</p>
+  <button id="quest5-38" class="btn-danger btn-lg">Israel</button>
+  <button id="quest5-39" class="btn-danger btn-lg">Netherlands</button>
+</div>
+<div id="question5-20">
+
+  <p>What ingredient is required to make a cake in Minecraft?</p>
+  <button id="quest5-40" class="btn-danger btn-lg">Yeast</button>
+  <button id="quest5-41" class="btn-danger btn-lg">Egg</button>
+</div>
+<div id="question5-21">
+
+  <p>What was the original name of "Minecraft"?</p>
+  <button id="quest5-42" class="btn-danger btn-lg">Cave Game</button>
+  <button id="quest5-43" class="btn-danger btn-lg">Minecraft</button>
+</div>
+<div id="question5-22">
+
+  <p>Who turns out to be the true victor in the Battle of Armageddon in Mortal Kombat?</p>
+  <button id="quest5-44" class="btn-danger btn-lg">Shao Khan</button>
+  <button id="quest5-45" class="btn-danger btn-lg">Liu Kang</button>
+</div>
+<div id="question5-23">
+
+  <p>In Hitman: Blood Money, what is the name of the target in the mission "Death of a Showman"?</p>
+  <button id="quest5-46" class="btn-danger btn-lg">Joseph Clarence</button>
+  <button id="quest5-47" class="btn-danger btn-lg">Maynard John</button>
+</div>
+<div id="question5-24">
+
+  <p>What is the first primary weapon the player gets in PAYDAY: The Heist?</p>
+  <button id="quest5-48" class="btn-danger btn-lg">SCAR-20</button>
+  <button id="quest5-49" class="btn-danger btn-lg">AMCAR-4</button>
+</div>
+<div id="question5-25">
+
+  <p>When was Star Wars: Battlefront II released?</p>
+  <button id="quest5-50" class="btn-danger btn-lg">2005</button>
+  <button id="quest5-51" class="btn-danger btn-lg">2006</button>
+</div>
+<div id="question5-26">
+
+  <p>In "Undertale", how many main endings are there?</p>
+  <button id="quest5-52" class="btn-danger btn-lg">3</button>
+  <button id="quest5-53" class="btn-danger btn-lg">2</button>
+</div>
+<div id="question5-27">
+
+  <p>In World of Warcraft lore, Thrall is the original wielder of "Doomhammer"?</p>
+  <button id="quest5-54" class="btn-danger btn-lg">False</button>
+  <button id="quest5-55" class="btn-danger btn-lg">True</button>
+</div>
+<div id="question5-28">
+
+  <p>In the 2002 video game "Kingdom Hearts", how many playable worlds were there?</p>
+  <button id="quest5-56" class="btn-danger btn-lg">14</button>
+  <button id="quest5-57" class="btn-danger btn-lg">16</button>
+</div>
+<div id="question5-29">
+
+  <p>What programming language was used to create the game "Minecraft"?</p>
+  <button id="quest5-58" class="btn-danger btn-lg">Java</button>
+  <button id="quest5-59" class="btn-danger btn-lg">Python</button>
+</div>
+<div id="question5-30">
+
+  <p>The ghosts in "Pac-Man" and "Ms. Pac-Man" have completely different behavior.</p>
+  <button id="quest5-60" class="btn-danger btn-lg">True</button>
+  <button id="quest5-61" class="btn-danger btn-lg">False</button>
+</div>
+<div id="question5-31">
+
+  <p>In the game Destiny, who succeeded Peter Dinklage in voicing the protagonist's "Ghost"?</p>
+  <button id="quest5-62" class="btn-danger btn-lg">Trevor Smith</button>
+  <button id="quest5-63" class="btn-danger btn-lg">Nolan North</button>
+</div>
+
+
+<div id="win">
+    <h4>Congratulations! You've conqueored the maze!</h4>
+    <img src="#">
+
+</div>
+</div>
+  </div>
+
+<!-- <audio controls autoplay loop>
+  <source src="music/MARIO - SUPER MARIO RUN (Trap Remix).mp3" type="audio/mp3">
+</audio> -->
+
+
+{% endblock %}

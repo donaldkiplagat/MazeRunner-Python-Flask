@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/gaming.css')}}">
+    <script  src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+    <script src= "{{url_for('static',filename='js/script.js')}}"></script>
+    <link rel="shortcut icon" href="https://icon2.kisspng.com/20180412/xiw/kisspng-paper-sunset-shimmer-quill-cutie-mark-crusaders-bo-write-5acf53a3231648.3205577215235368031437.jpg">
+{% endblock %}
+
+{% block content %}
+  <div class="jumbotron">
+
+  </div>
+
+  <br><br><br><br><br>
+  <div class="text-center"id="gaming">
+
+    <div class="panel panel-info panel-height">
+      <button id="quit" onclick="location.href='index.html'"  class="btn-danger btn-lg">Quit</button>
+
+{% for question in questions %}
+  <div id="{{question.div}}">
+    <p>{{question.question}}</p>
+    <button id="{{question.button1}}" class="btn-danger btn-lg">{{question.choice1}}</button>
+    <button id="{{question.button2}}" class="btn-danger btn-lg">{{question.choice2}}</button>
+  </div>
+{% endfor %}
+
+
+<div id="win">
+    <h4>Congratulations! You've conqueored the maze!</h4>
+    <img src="#">
+</div>
+
+</div>
+  </div>
+
+<!-- <audio controls autoplay loop>
+  <source src="music/MARIO - SUPER MARIO RUN (Trap Remix).mp3" type="audio/mp3">
+</audio> -->
+
+
+{% endblock %}
