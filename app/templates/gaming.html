@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/gaming.css')}}">
     <script  src="https://code.jquery.com/jquery-3.3.1.js" ></script>
     <script src= "{{url_for('static',filename='js/script.js')}}"></script>
-    <link rel="shortcut icon" href="https://icon2.kisspng.com/20180412/xiw/kisspng-paper-sunset-shimmer-quill-cutie-mark-crusaders-bo-write-5acf53a3231648.3205577215235368031437.jpg">
+    <link rel="shortcut icon" href="https://icon2.kisspng.com/20180320/stw/kisspng-phil-coulson-iron-man-s-h-i-e-l-d-logo-marvel-cin-drawing-shield-marvel-icon-5ab1352d95f856.3879483315215629256143.jpg">
 {% endblock %}
 
+
 {% block content %}
+
   <div class="jumbotron">
 
   </div>
@@ -25,8 +27,8 @@
 {% for question in questions %}
   <div id="{{question.div}}">
     <p>{{question.question}}</p>
-    <button id="{{question.button1}}" class="btn-danger btn-lg">{{question.choice1}}</button>
-    <button id="{{question.button2}}" class="btn-danger btn-lg">{{question.choice2}}</button>
+    <button id="{{question.button1}}"  class="btn-danger btn-lg points" onclick="add_points()">{{question.choice1}}</button>
+    <button id="{{question.button2}}"  class="btn-danger btn-lg points" onclick="add_points()">{{question.choice2}}</button>
   </div>
 {% endfor %}
 
@@ -42,6 +44,17 @@
 <!-- <audio controls autoplay loop>
   <source src="music/MARIO - SUPER MARIO RUN (Trap Remix).mp3" type="audio/mp3">
 </audio> -->
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type=text/javascript>
+        $(function() {
+          $('button.points').bind('click', function() {
+            $.getJSON('/add_points',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+</script>
 
 {% endblock %}
