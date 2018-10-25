@@ -5,34 +5,26 @@
 {% block styles%}
     {{ super() }}
     <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
-    <link rel="shortcut icon" href="https://icon2.kisspng.com/20180412/xiw/kisspng-paper-sunset-shimmer-quill-cutie-mark-crusaders-bo-write-5acf53a3231648.3205577215235368031437.jpg">
+    <link rel="icon" type="image/png" href="{{url_for('static',filename='img/maze.png')}}" >
 {% endblock %}
 
 {% block content %}
-<br><br><br><br><br>
-<p>{{user.username}}</p>
-
+<br><br><br><br>
+<div class="text-center">
 <div class="row">
-  <img  src="../static/img/badge1.png" width="340" height="340" >
-  <img  src="../static/img/badge2.png" width="340" height="340" >
-  <img  src="../static/img/badge3.png" width="340" height="340" >
-  <img  src="../static/img/badge4.png" width="340" height="340" >
-  <img  src="../static/img/badge5.png" width="340" height="340" >
-
+  <img  src="../static/img/badge1.png" width="200" height="200" >
+  <img  src="../static/img/badge2.png" width="200" height="200" >
+  <img  src="../static/img/badge3.png" width="200" height="200" >
+  <img  src="../static/img/badge4.png" width="200" height="200" >
+  <img  src="../static/img/badge5.png" width="200" height="200" >
+</div>
 </div>
 
 <div class="well text-center" style="width:30rem;" >
-
-    <div class="card" style="width: 20rem;">
-      <div class="card-body">
-        <h3 class="card-title">Username: {{user.username}}</h3>
-      </div>
-    </div>
+        <h3 >{{user.username}}</h3>
   </div>
 
-
-
-<br><br><br>
+<br>
 <div class="table-size">
 
 

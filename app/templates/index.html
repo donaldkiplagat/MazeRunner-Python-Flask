@@ -10,14 +10,38 @@
 
 {% block content %}
 <br><br><br>
+<div class="text-center">
 <div class="row">
-  <img class="card-img-top img-fluid" src="../static/img/badge1.png" width="350" height="350" >
-  <img class="card-img-top img-fluid" src="../static/img/badge2.png" width="350" height="350" >
-  <img class="card-img-top img-fluid" src="../static/img/badge3.png" width="350" height="350" >
-  <img class="card-img-top img-fluid" src="../static/img/badge4.png" width="350" height="350" >
-  <img class="card-img-top img-fluid" src="../static/img/badge5.png" width="350" height="350" >
+  <img  src="../static/img/badge1.png" width="200" height="200" >
+  <img  src="../static/img/badge2.png" width="200" height="200" >
+  <img  src="../static/img/badge3.png" width="200" height="200" >
+  <img  src="../static/img/badge4.png" width="200" height="200" >
+  <img  src="../static/img/badge5.png" width="200" height="200" >
+</div>
+</div>
+
+<div class="text-center">
+
+  <div class="panel panel-info panel-height responsive">
+    <h2>Do you have what it takes to take on our maze?Choose a category below to if you deem yourself worthy!</h2>
+    <button  onclick="location.href='/anime'" class="btn-success btn-lg">Anime</button>
+    <button  onclick="location.href='/gaming'" class="btn-primary btn-lg">Gaming</button>
+    <button  onclick="location.href='/music'" class="btn-default btn-lg">Music</button>
+    <button  onclick="location.href='/marvel'" class="btn-danger btn-lg">Marvel</button>
+</div>
+<br><br>
 
 </div>
 
+<div class="panel panel-info panel-height responsive">
+  <h2 class="text-center">Rules</h2>
 
+    <h2>* To win you need to answer ALL the questions correctly.One wrong answer and you get stuck in the maze.</h2>
+    <h2>* Ranking is done according to an inverse point system.Ranking is done from lowest to highest.The one with the least points is deemed number one.</h2>
+    <h2>* For points to be awarded the "Quit" button must be pressed,even when you conquer the maze at the end.</h2>
+
+
+
+
+</div>
 {% endblock %}

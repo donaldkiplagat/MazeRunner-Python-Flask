@@ -36,14 +36,16 @@
 
   <div id="{{question.div}}">
     <p>{{question.question}}</p>
-    <button id="{{question.button1}}"  class="btn-danger btn-lg points" onclick="add_points()">{{question.choice1}}</button>
-    <button id="{{question.button2}}"  class="btn-danger btn-lg points" onclick="add_points()">{{question.choice2}}</button>
+    <button id="{{question.button1}}"  class="btn-danger btn-lg points" >{{question.choice1}}</button>
+    <button id="{{question.button2}}"  class="btn-danger btn-lg points" >{{question.choice2}}</button>
   </div>
 {% endfor %}
 
 
 <div id="win">
     <h4>Congratulations! You've conqueored the maze!</h4>
+    <img  src="../static/img/badge4.png" width="200" height="200" >
+
 </div>
 
 </div>

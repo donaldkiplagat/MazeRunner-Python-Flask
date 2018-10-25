@@ -33,25 +33,25 @@
 
                         <h3>Level 1</h3>
                         <p>Which rapper is also known as "Slim Shady"?</p>
-                        <button id="quest1-0" class="btn points" onclick="add_points()">Shade 45</button>
-                        <button id="quest1-1" class="btn points" onclick="add_points()">Snoop Dogg</button>
-                        <button id="quest1-2" class="btn points" onclick="add_points()">Eminem</button>
-                        <button id="quest1-3" class="btn points" onclick="add_points()">Yelawolf</button>
+                        <button id="quest1-0" class="btn points" >Shade 45</button>
+                        <button id="quest1-1" class="btn points" >Snoop Dogg</button>
+                        <button id="quest1-2" class="btn points" >Eminem</button>
+                        <button id="quest1-3" class="btn points" >Yelawolf</button>
           </div>
 
     {% for question in questions %}
 
       <div id="{{question.div}}">
         <p>{{question.question}}</p>
-        <button id="{{question.button1}}"  class="btn btn-lg points" onclick="add_points()">{{question.choice1}}</button>
-        <button id="{{question.button2}}"  class="btn btn-lg points" onclick="add_points()">{{question.choice2}}</button>
+        <button id="{{question.button1}}"  class="btn btn-lg points" >{{question.choice1}}</button>
+        <button id="{{question.button2}}"  class="btn btn-lg points" >{{question.choice2}}</button>
       </div>
     {% endfor %}
 
 
     <div id="win">
         <h4>Congratulations! You've conquered the maze!</h4>
-        <img src="#">
+        <img  src="../static/img/badge1.png" width="200" height="200" >
     </div>
 
     </div>

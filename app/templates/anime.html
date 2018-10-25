@@ -27,25 +27,25 @@
       <div id="question1-0">
 
     <p>Which of these genres is aimed at girls aged between ten and eighteen?</p>
-    <button id="quest1-0"class="btn-danger btn-lg points" onclick="add_points()">Shounen</button>
-    <button id="quest1-1"class="btn-danger btn-lg points" onclick="add_points()">Seinen</button>
-    <button id="quest1-2"class="btn-danger btn-lg points" onclick="add_points()">Shoujo</button>
-    <button id="quest1-3"class="btn-danger btn-lg points" onclick="add_points()">Jousei</button>
+    <button id="quest1-0"class="btn-danger btn-lg points" >Shounen</button>
+    <button id="quest1-1"class="btn-danger btn-lg points" >Seinen</button>
+    <button id="quest1-2"class="btn-danger btn-lg points" >Shoujo</button>
+    <button id="quest1-3"class="btn-danger btn-lg points" >Jousei</button>
   </div>
 
 {% for question in questions %}
 
   <div id="{{question.div}}">
     <p>{{question.question}}</p>
-    <button id="{{question.button1}}"  class="btn-danger btn-lg points" onclick="add_points()">{{question.choice1}}</button>
-    <button id="{{question.button2}}"  class="btn-danger btn-lg points" onclick="add_points()">{{question.choice2}}</button>
+    <button id="{{question.button1}}"  class="btn-danger btn-lg points" >{{question.choice1}}</button>
+    <button id="{{question.button2}}"  class="btn-danger btn-lg points" >{{question.choice2}}</button>
   </div>
 {% endfor %}
 
 
 <div id="win">
     <h4>Congratulations! You've conquered the maze!</h4>
-    <img src="#">
+    <img  src="../static/img/badge2.png" width="200" height="200" >
 </div>
 
 </div>

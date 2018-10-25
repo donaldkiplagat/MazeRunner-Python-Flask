@@ -67,10 +67,10 @@ def leaderboard():
 @login_required
 def profile():
 
-    marvel = Score.query.filter_by(username=current_user.username).order_by(Score.username,Score.score.asc()).all()
-    gaming = Score.query.filter_by(username=current_user.username).order_by(Score.username,Score.score.asc()).all()
-    anime = Score.query.filter_by(username=current_user.username).order_by(Score.username,Score.score.asc()).all()
-    music = Score.query.filter_by(username=current_user.username).order_by(Score.username,Score.score.asc()).all()
+    marvel = Score.query.filter_by(username=current_user.username,category="Marvel").order_by(Score.username,Score.score.asc()).all()
+    gaming = Score.query.filter_by(username=current_user.username,category="Gaming").order_by(Score.username,Score.score.asc()).all()
+    anime = Score.query.filter_by(username=current_user.username,category="Anime").order_by(Score.username,Score.score.asc()).all()
+    music = Score.query.filter_by(username=current_user.username,category="Music").order_by(Score.username,Score.score.asc()).all()
 
 
 

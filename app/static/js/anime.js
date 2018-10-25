@@ -202,7 +202,7 @@ $(document).ready(function() {
   });
   $("#quest4-21").click(function() {
     $("#question4-10").hide();
-    $("#question2-3").show();
+    $("#win").show();
   });
   $("#quest4-22").click(function() {
     $("#question4-11").hide();
