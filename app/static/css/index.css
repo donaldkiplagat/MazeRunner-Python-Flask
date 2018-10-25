@@ -7,6 +7,8 @@ border-radius: 8px;
 border: 2px;
 padding: 8px;
 background-color: rgba(0,0,0, 0.7);
+width:1200px;
+margin: auto;
 }
 .jumbotron {
     margin-bottom: 0px;
@@ -75,6 +77,8 @@ h4{
   border: 2px;
   padding: 8px;
   background-color: rgba(0,0,0, 0.7);
+  width:1200px;
+  margin: auto;
   }
 }
 /* Media query for Pixel 2 */
@@ -101,6 +105,8 @@ h4{
   border: 2px;
   padding: 8px;
   background-color: rgba(0,0,0, 0.7);
+  width:1200px;
+  margin: auto;
   }
 }
 
@@ -130,6 +136,8 @@ body,html{
   border: 2px;
   padding: 8px;
   background-color: rgba(0,0,0, 0.7);
+  width:1200px;
+  margin: auto;
   }
   .jumbotron {
       margin-bottom: 0px;
@@ -172,6 +180,8 @@ body,html{
   border: 2px;
   padding: 8px;
   background-color: rgba(0,0,0, 0.7);
+  width:1200px;
+  margin: auto;
   }
   .jumbotron {
       margin-bottom: 0px;
@@ -215,6 +225,8 @@ body,html{
   border: 2px;
   padding: 8px;
   background-color: rgba(0,0,0, 0.7);
+  width:1200px;
+  margin: auto;
   }
 }
 
@@ -243,6 +255,8 @@ body,html{
   border: 2px;
   padding: 8px;
   background-color: rgba(0,0,0, 0.7);
+  width:1200px;
+  margin: auto;
   }
 }
 
@@ -272,6 +286,8 @@ body,html{
   border: 2px;
   padding: 8px;
   background-color: rgba(0,0,0, 0.7);
+  width:1200px;
+  margin: auto;
   }
 }
 
@@ -301,6 +317,8 @@ body,html{
   border: 2px;
   padding: 8px;
   background-color: rgba(0,0,0, 0.7);
+  width:1200px;
+  margin: auto;
   }
 }
 
@@ -328,6 +346,8 @@ body,html{
   border: 2px;
   padding: 8px;
   background-color: rgba(0,0,0, 0.7);
+  width:1200px;
+  margin: auto;
   }
 }
 
@@ -356,6 +376,8 @@ body,html{
   border: 2px;
   padding: 8px;
   background-color: rgba(0,0,0, 0.7);
+  width:1200px;
+  margin: auto;
   }
 }
 
@@ -386,6 +408,8 @@ body,html{
   border: 2px;
   padding: 8px;
   background-color: rgba(0,0,0, 0.7);
+  width:1200px;
+  margin: auto;
   }
 }
 
@@ -413,5 +437,7 @@ body,html{
   border: 2px;
   padding: 8px;
   background-color: rgba(0,0,0, 0.7);
+  width:1200px;
+  margin: auto;
   }
 }
