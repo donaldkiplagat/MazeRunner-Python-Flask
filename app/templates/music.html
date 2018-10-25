@@ -19,43 +19,43 @@
 
       <br />
       <br />
+
       <br />
       <br />
-      <div class="panel panel-info text-center">
-            <div class="panel-body panel-height">
-              <button  onclick="location.href='index.html'"  id="btn" class="quit">Quit</button>
-
-                  <div class="panel-heading">
-
-                    <div id="question1">
+      <div class="text-center">
+    <br><br><br><br>
+        <div class="panel panel-info panel-height responsive">
+          <button id="quit" onclick="location.href='/'"  class="btn btn-lg">Quit</button>
 
 
-                                  <h3>Level 1</h3>
-                                  <p>Which rapper is also known as "Slim Shady"?</p>
-                                  <button id="quest1-0" class="btn points" onclick="add_points()">Shade 45</button>
-                                  <button id="quest1-1" class="btn points" onclick="add_points()">Snoop Dogg</button>
-                                  <button id="quest1-2" class="btn points" onclick="add_points()">Eminem</button>
-                                  <button id="quest1-3" class="btn points" onclick="add_points()">Yelawolf</button>
-                    </div>
+          <div id="question1">
 
 
+                        <h3>Level 1</h3>
+                        <p>Which rapper is also known as "Slim Shady"?</p>
+                        <button id="quest1-0" class="btn points" onclick="add_points()">Shade 45</button>
+                        <button id="quest1-1" class="btn points" onclick="add_points()">Snoop Dogg</button>
+                        <button id="quest1-2" class="btn points" onclick="add_points()">Eminem</button>
+                        <button id="quest1-3" class="btn points" onclick="add_points()">Yelawolf</button>
+          </div>
 
-                    {% for question in questions %}
+    {% for question in questions %}
 
-                      <div id="{{question.div}}">
-                        <p>{{question.question}}</p>
-                        <button id="{{question.button1}}"  class="btn points" onclick="add_points()">{{question.choice1}}</button>
-                        <button id="{{question.button2}}"  class="btn points" onclick="add_points()">{{question.choice2}}</button>
-                      </div>
-                    {% endfor %}
-
-                  <div id="win">
-                        <h4>Congratulations! You've Conquered the Maze!</h4>
-                        <img src="#">
-                  </div>
-            </div>
+      <div id="{{question.div}}">
+        <p>{{question.question}}</p>
+        <button id="{{question.button1}}"  class="btn btn-lg points" onclick="add_points()">{{question.choice1}}</button>
+        <button id="{{question.button2}}"  class="btn btn-lg points" onclick="add_points()">{{question.choice2}}</button>
       </div>
+    {% endfor %}
+
+
+    <div id="win">
+        <h4>Congratulations! You've conquered the maze!</h4>
+        <img src="#">
     </div>
+
+    </div>
+      </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type=text/javascript>
@@ -72,7 +72,7 @@
 
     <script type=text/javascript>
             $(function() {
-              $('button.quit').bind('click', function() {
+              $('button#quit').bind('click', function() {
                 $.getJSON('/add_music',
                     function(data) {
                   //do nothing

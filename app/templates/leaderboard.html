@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+
+{% block content%}
+<br><br><br>
+<div class="table-size">
+
+
+  <table class="table  table-dark"  width="2em">
+     <h2 class="text-center"><span class="title">Anime</span></h2>
+  <thead>
+  <tr>
+    <th scope="col" >Position</th>
+    <th scope="col">Username</th>
+    <th scope="col">Score</th>
+    <th scope="col">Badge</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for anime in anime%}
+
+  <tr>
+    <td id="position"></td>
+    <td>{{anime.username}}</td>
+    <td>{{anime.score}}</td>
+    <td>{{anime.badge}}</td>
+  </tr>
+  {% endfor %}
+
+
+  </tbody>
+  </table>
+
+
+  <table class="table table-dark"  width="2em">
+     <h2 class="text-center"><span class="title">Music</span></h2>
+  <thead>
+  <tr>
+    <th scope="col" >Position</th>
+    <th scope="col">Username</th>
+    <th scope="col">Score</th>
+    <th scope="col">Badge</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for music in music%}
+
+  <tr>
+    <td id="position"></td>
+    <td>{{music.username}}</td>
+    <td>{{music.score}}</td>
+    <td>{{music.badge}}</td>
+  </tr>
+  {% endfor %}
+
+
+  </tbody>
+  </table>
+
+
+    <table class="table  table-dark"  width="2em">
+       <h2 class="text-center"><span class="title">Marvel</span></h2>
+  <thead>
+    <tr>
+      <th scope="col" >Position</th>
+      <th scope="col">Username</th>
+      <th scope="col">Score</th>
+      <th scope="col">Badge</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for marvel in marvel%}
+
+    <tr>
+      <td id="position"></td>
+      <td>{{marvel.username}}</td>
+      <td>{{marvel.score}}</td>
+      <td>{{marvel.badge}}</td>
+    </tr>
+    {% endfor %}
+
+
+  </tbody>
+</table>
+
+<table class="table  table-dark"  width="2em">
+   <h2 class="text-center"><span class="title">Gaming</span></h2>
+<thead>
+<tr>
+  <th scope="col" >Position</th>
+  <th scope="col">Username</th>
+  <th scope="col">Score</th>
+  <th scope="col">Badge</th>
+</tr>
+</thead>
+<tbody>
+{% for game in gaming%}
+
+<tr>
+  <td id="position"></td>
+  <td>{{game.username}}</td>
+  <td>{{game.score}}</td>
+  <td>{{game.badge}}</td>
+</tr>
+{% endfor %}
+
+
+</tbody>
+</table>
+
+</div>
+
+
+<style>
+
+.table-size{
+  width: 900px;
+  margin: auto;
+}
+
+table {
+    counter-reset: rowNumber;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    background-color: rgba(0,0,0, 0.7);
+
+
+}
+
+table tr td#position{
+    counter-increment: rowNumber;
+}
+
+table tr td#position:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+body{
+  /* The image used */
+  background-image: url("../static/img/maze.jpg");
+  /* Set a specific height */
+  height:950px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: 0% 10%;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+}
+.title{
+  background-color: black;
+  color:white;
+  background-color: rgba(0,0,0, 0.7);
+
+}
+
+</style>
+{% endblock %}

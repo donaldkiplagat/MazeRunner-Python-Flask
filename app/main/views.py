@@ -51,6 +51,19 @@ def anime():
     title="Anime"
     return render_template('anime.html',title=title,questions=questions)
 
+@main.route("/leaderboard",methods=['GET','POST'])
+@login_required
+def leaderboard():
+
+    marvel = Score.query.filter_by(category="Marvel").order_by(Score.username,Score.score.asc()).distinct(Score.username).all()
+    gaming = Score.query.filter_by(category="Gaming").order_by(Score.username,Score.score.asc()).distinct(Score.username).all()
+    anime = Score.query.filter_by(category="Anime").order_by(Score.username,Score.score.asc()).distinct(Score.username).all()
+    music = Score.query.filter_by(category="Music").order_by(Score.username,Score.score.asc()).distinct(Score.username).all()
+
+    title="Leaderboard"
+    return render_template('leaderboard.html',title=title,marvel=marvel,gaming=gaming,anime=anime,music=music)
+
+
 @main.route('/background_process_test')
 def background_process_test():
     print("Hello")
@@ -75,18 +88,36 @@ def add_points():
 @main.route('/add_gaming')
 def add_gaming():
 
+
     username = current_user.username
     score = current_user.points
     category ="Gaming"
-    badge ="Veteran Badge"
+
+    if score>4:
+        if score==5:
+            badge="Veteran"
+        elif score>5 and score<11:
+            badge="Surveyor"
+        elif score>10 and score<21:
+            badge="Hardcore"
+        elif score>20 and score<31:
+            badge="Defier"
+        elif score>30:
+            badge="Lost Soul"
+        else:
+            badge="No badge acquired"
+
+        new_score = Score(username=username,score=score,category=category,badge=badge)
+        db.session.add(new_score)
+        db.session.commit()
+
+    else:
+        return "nothing"
 
     current_user.points=0
     db.session.add(current_user)
     db.session.commit()
 
-    new_score = Score(username=username,score=score,category=category,badge=badge)
-    db.session.add(new_score)
-    db.session.commit()
 
     print(new_score)
     return "nothing"
@@ -97,16 +128,32 @@ def add_marvel():
     username = current_user.username
     score = current_user.points
     category ="Marvel"
-    badge ="S.H.I.E.L.D Badge"
+
+    if score>4:
+        if score==5:
+            badge="Veteran"
+        elif score>5 and score<11:
+            badge="Surveyor"
+        elif score>10 and score<21:
+            badge="Hardcore"
+        elif score>20 and score<31:
+            badge="Defier"
+        elif score>30:
+            badge="Lost Soul"
+        else:
+            badge="No badge acquired"
+
+        new_score = Score(username=username,score=score,category=category,badge=badge)
+        db.session.add(new_score)
+        db.session.commit()
+
+    else:
+        return "nothing"
 
     current_user.points=0
     db.session.add(current_user)
     db.session.commit()
 
-    new_score = Score(username=username,score=score,category=category,badge=badge)
-
-    db.session.add(new_score)
-    db.session.commit()
 
     print(new_score)
     return "nothing"
@@ -117,16 +164,32 @@ def add_anime():
     username = current_user.username
     score = current_user.points
     category ="Anime"
-    badge ="Warrior Badge"
+
+    if score>4:
+        if score==5:
+            badge="Veteran"
+        elif score>5 and score<11:
+            badge="Surveyor"
+        elif score>10 and score<21:
+            badge="Hardcore"
+        elif score>20 and score<31:
+            badge="Defier"
+        elif score>30:
+            badge="Lost Soul"
+        else:
+            badge="No badge acquired"
+
+        new_score = Score(username=username,score=score,category=category,badge=badge)
+        db.session.add(new_score)
+        db.session.commit()
+
+    else:
+        return "nothing"
 
     current_user.points=0
     db.session.add(current_user)
     db.session.commit()
 
-    new_score = Score(username=username,score=score,category=category,badge=badge)
-
-    db.session.add(new_score)
-    db.session.commit()
 
     print(new_score)
     return "nothing"
@@ -137,16 +200,33 @@ def add_music():
     username = current_user.username
     score = current_user.points
     category ="Music"
-    badge ="Music Master Badge"
+
+    if score>4:
+        if score==5:
+            badge="Veteran"
+        elif score>5 and score<11:
+            badge="Surveyor"
+        elif score>10 and score<21:
+            badge="Hardcore"
+        elif score>20 and score<31:
+            badge="Defier"
+        elif score>30:
+            badge="Lost Soul"
+        else:
+            badge="No badge acquired"
+
+        new_score = Score(username=username,score=score,category=category,badge=badge)
+        db.session.add(new_score)
+        db.session.commit()
+
+    else:
+        return "nothing"
 
     current_user.points=0
     db.session.add(current_user)
     db.session.commit()
 
-    new_score = Score(username=username,score=score,category=category,badge=badge)
 
-    db.session.add(new_score)
-    db.session.commit()
 
     print(new_score)
     return "nothing"
