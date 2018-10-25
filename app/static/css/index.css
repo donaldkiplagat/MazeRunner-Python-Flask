@@ -14,7 +14,7 @@ background-color: rgba(0,0,0, 0.7);
     width: 550px;
     margin: auto;
 
-    background-image: url("../img/download.jpeg");
+    background-image: url("../img/download.jpg");
     background-position: 0% 51%;
 
     background-size: cover;
@@ -28,7 +28,7 @@ body,html{
 
 body{
   /* The image used */
-  background-image: url("../img/home.JPG");
+  background-image: url("../img/home.jpg");
   /* Set a specific height */
   height:950px;
   /* Position and center the image to scale nicely on all screens */
@@ -55,7 +55,7 @@ h4{
 @media only screen and (min-device-width : 720px) {
   body{
     /* The image used */
-    background-image: url("../img/home.JPG");
+    background-image: url("../img/home.jpg");
     /* Set a specific height */
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
@@ -81,7 +81,7 @@ h4{
 @media only screen and (device-width : 720px) and (max-device-height : 1480px) {
   body{
     /* The image used */
-    background-image: url("../img/home.JPG");
+    background-image: url("../img/home.jpg");
     /* Set a specific height */
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
@@ -112,7 +112,7 @@ body,html{
 }
   body{
     /* The image used */
-    background-image: url("../img/home.JPG");
+    background-image: url("../img/home.jpg");
     /* Set a specific height */
 
     /* Position and center the image to scale nicely on all screens */
@@ -155,7 +155,7 @@ body,html{
   }
   body{
     /* The image used */
-    background-image: url("../img/home.JPG");
+    background-image: url("../img/home.jpg");
     /* Set a specific height */
     /* Position and center the image to scale nicely on all screens */
     background-position:center;
@@ -195,7 +195,7 @@ body,html{
 @media only screen and (device-width : 414px) and (max-device-height : 736px) {
   body{
     /* The image used */
-    background-image: url("../img/home.JPG");
+    background-image: url("../img/home.jpg");
     /* Set a specific height */
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
@@ -223,7 +223,7 @@ body,html{
 @media only screen and (device-width : 411px) and (max-device-height : 823px) {
   body{
     /* The image used */
-    background-image: url("../img/home.JPG");
+    background-image: url("../img/home.jpg");
     /* Set a specific height */
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
@@ -252,7 +252,7 @@ body,html{
 @media only screen and (min-device-height : 812px) and (max-device-height : 820px) {
   body{
     /* The image used */
-    background-image: url("../img/home.JPG");
+    background-image: url("../img/home.jpg");
     /* Set a specific height */
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
@@ -282,7 +282,7 @@ body,html{
 @media only screen and (min-device-width : 375px) and (device-height : 667px) {
   body{
     /* The image used */
-    background-image: url("../img/home.JPG");
+    background-image: url("../img/home.jpg");
     /* Set a specific height */
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
@@ -308,7 +308,7 @@ body,html{
 @media only screen and (min-device-width : 360px) and (max-device-height : 640px) {
   body{
     /* The image used */
-    background-image: url("../img/home.JPG");
+    background-image: url("../img/home.jpg");
     /* Set a specific height */
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
@@ -336,7 +336,7 @@ body,html{
 @media only screen and (min-device-width : 320px) and (max-device-height : 568px) {
   body{
     /* The image used */
-    background-image: url("../img/home.JPG");
+    background-image: url("../img/home.jpg");
     /* Set a specific height */
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
@@ -366,7 +366,7 @@ body,html{
 @media only screen and (device-height : 1024px) {
   body{
     /* The image used */
-    background-image: url("../img/home.JPG");
+    background-image: url("../img/home.jpg");
     /* Set a specific height */
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
@@ -393,7 +393,7 @@ body,html{
 @media only screen and (device-height : 1366px) {
   body{
     /* The image used */
-    background-image: url("../img/home.JPG");
+    background-image: url("../img/home.jpg");
     /* Set a specific height */
     height:1000px;
     /* Position and center the image to scale nicely on all screens */

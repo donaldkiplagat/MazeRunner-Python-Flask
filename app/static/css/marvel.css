@@ -30,7 +30,7 @@ background-color: rgba(0,0,0, 0.7);
     width: 550px;
     margin: auto;
 
-    background-image: url("../img/download.jpeg");
+    background-image: url("../img/download.jpg");
     background-position: 0% 51%;
 
     background-size: cover;
@@ -157,7 +157,7 @@ body,html{
       width: 550px;
       margin: auto;
 
-      background-image: url("../img/download.jpeg");
+      background-image: url("../img/download.jpg");
       background-position: 0% 51%;
 
       background-size: cover;
@@ -201,7 +201,7 @@ body,html{
       width: 550px;
       margin: auto;
 
-      background-image: url("../img/download.jpeg");
+      background-image: url("../img/download.jpg");
       background-position: 0% 51%;
 
       background-size: cover;
