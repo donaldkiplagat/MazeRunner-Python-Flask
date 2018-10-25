@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/anime.css')}}">
+    <script  src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+    <script src= "{{url_for('static',filename='js/anime.js')}}"></script>
+    <link rel="shortcut icon" href="https://icon2.kisspng.com/20171220/zhe/game-controller-png-image-5a3a7acd9a4bb5.404273831513781965632.jpg" >
+{% endblock %}
+
+
+{% block content %}
+<br><br>
+  <div class="jumbotron">
+
+  </div>
+
+  <br><br><br><br><br>
+  <div class="text-center">
+
+    <div class="panel panel-info panel-height responsive">
+      <button id="quit" onclick="location.href='index.html'"  class="btn-danger btn-lg">Quit</button>
+
+
+      <div id="question1-0">
+
+    <p>Which of these genres is aimed at girls aged between ten and eighteen?</p>
+    <button id="quest1-0"class="btn-danger btn-lg points" onclick="add_points()">Shounen</button>
+    <button id="quest1-1"class="btn-danger btn-lg points" onclick="add_points()">Seinen</button>
+    <button id="quest1-2"class="btn-danger btn-lg points" onclick="add_points()">Shoujo</button>
+    <button id="quest1-3"class="btn-danger btn-lg points" onclick="add_points()">Jousei</button>
+  </div>
+
+{% for question in questions %}
+
+  <div id="{{question.div}}">
+    <p>{{question.question}}</p>
+    <button id="{{question.button1}}"  class="btn-danger btn-lg points" onclick="add_points()">{{question.choice1}}</button>
+    <button id="{{question.button2}}"  class="btn-danger btn-lg points" onclick="add_points()">{{question.choice2}}</button>
+  </div>
+{% endfor %}
+
+
+<div id="win">
+    <h4>Congratulations! You've conquered the maze!</h4>
+    <img src="#">
+</div>
+
+</div>
+  </div>
+
+<!-- <audio controls autoplay loop>
+  <source src="music/MARIO - SUPER MARIO RUN (Trap Remix).mp3" type="audio/mp3">
+</audio> -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type=text/javascript>
+        $(function() {
+          $('button.points').bind('click', function() {
+            $.getJSON('/add_points',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+</script>
+
+<script type=text/javascript>
+        $(function() {
+          $('button#quit').bind('click', function() {
+            $.getJSON('/add_anime',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+</script>
+
+
+{% endblock %}

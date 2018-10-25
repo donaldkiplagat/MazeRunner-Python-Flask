@@ -1,0 +1,592 @@
+body,html{
+  height: 100%;
+}
+  body {
+  background-image: url("../img/hipWallP.jpg");
+}
+
+/* #formBody{
+  display: none;
+} */
+
+.kichwa{
+  text-align: center;
+
+}
+
+.ingine{
+text-decoration: underline;;
+}
+
+
+h4{
+  font-size:60px;
+ letter-spacing: 3px;
+ text-shadow:3px 2px gray;
+
+    color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+h3{
+  font-size: 40px;
+}
+
+/* Safari 4.0 - 8.0 */
+@keyframes example {
+    from {color: red;}
+  from {color: yellow;}
+    from {color:purple;}
+    from {color: aqua;}
+    to {color: green;}
+}
+
+
+h2{
+  font-size: 40px;
+}
+
+p{
+  text-align: center;
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#win{
+  display: none;
+}
+#btn{
+  text-align: center;
+  margin-left: 20px;
+  font-size: 22px;
+
+  font-style: italic;
+  float: center;
+
+  background-color: #D0D0D0;
+  margin-top: 5px;
+  margin-right: 15px;
+
+  border-radius: 8px;
+
+  border: 2px solid #606060;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn{
+  text-align: center;
+  margin-left: 20px;
+  font-size: 40px;
+
+  font-style: italic;
+  float: center;
+
+  background-color: #D0D0D0;
+  margin-top: 50px;
+  margin-right: 15px;
+
+  border-radius: 8px;
+
+  border: 2px solid #606060;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn:hover{
+  background-color: #A9A9A9;
+}
+
+.musicLogo{
+  margin: 20px;
+}
+
+.kichwa-main{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.panel{
+background-color: #E8E8E8;
+ border: black;
+ border-radius: 25px;
+
+}
+
+.panel-body{
+  background-color:#F5F5F5;
+  border-radius: 25px;
+   border: 2px solid #383838;
+}
+
+.panel-height {
+  /* height: 400px; */
+}
+
+.panel-info{
+  background-color: #F8F8F8;
+
+}
+
+.jumbotron{
+   border-radius: 25px;
+  margin-top: 30px;
+  background-color: #F8F8F8;
+  border: 2px solid #383838;
+
+  background-image: url("../img/hip.png");
+  background-position: 0% 42%;
+  width:550px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+#question2-0,
+#question2-1,
+#question2-2,
+#question2-3 {
+  display: none;
+}
+#question3-0,
+#question3-1,
+#question3-2,
+#question3-3,
+#question3-4,
+#question3-5,
+#question3-6,
+#question3-7 {
+  display: none;
+}
+#question4-0,
+#question4-1,
+#question4-2,
+#question4-3,
+#question4-4,
+#question4-5,
+#question4-6,
+#question4-7,
+#question4-8,
+#question4-9,
+#question4-10,
+#question4-11,
+#question4-12,
+#question4-13,
+#question4-14,
+#question4-15 {
+  display: none;
+}
+
+#question5-0,
+#question5-1,
+#question5-2,
+#question5-3,
+#question5-4,
+#question5-5,
+#question5-6,
+#question5-7,
+#question5-8,
+#question5-9,
+#question5-10,
+#question5-11,
+#question5-12,
+#question5-13,
+#question5-14,
+#question5-15,
+#question5-16,
+#question5-17,
+#question5-18,
+#question5-19,
+#question5-20,
+#question5-21,
+#question5-22,
+#question5-23,
+#question5-24,
+#question5-25,
+#question5-26,
+#question5-27,
+#question5-28,
+#question5-29,
+#question5-30,
+#question5-31 {
+  display: none;
+}
+/* Media query for Samsung J 6*/
+@media only screen and (min-device-width : 720px){
+  body{
+    /* The image used */
+    background-image: url("../img/hipWallP.jpg");
+    /* Set a specific height */
+    height:700px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+    margin-top: 50%;
+  background-color: #E8E8E8;
+   border: black;
+   border-radius: 25px;
+
+  }
+
+  .panel-body{
+    background-color:#F5F5F5;
+    border-radius: 25px;
+     border: 2px solid #383838;
+  }
+
+  .panel-height {
+    /* height: 400px; */
+  }
+
+  .panel-info{
+    background-color: #F8F8F8;
+
+  }
+}
+/* Media query for Pixel */
+@media only screen and (min-device-width : 411px) and (max-device-height : 823px) {
+  body{
+    /* The image used */
+    background-image: url("../img/hipWallP.jpg");
+    /* Set a specific height */
+    height:700px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+    margin-top: 50%;
+  background-color: #E8E8E8;
+   border: black;
+   border-radius: 25px;
+
+  }
+
+  .panel-body{
+    background-color:#F5F5F5;
+    border-radius: 25px;
+     border: 2px solid #383838;
+  }
+
+  .panel-height {
+    /* height: 400px; */
+  }
+
+  .panel-info{
+    background-color: #F8F8F8;
+
+  }
+}
+/* Media query for 15.4inch screens*/
+@media  (min-device-width : 1281px){
+body,html{
+  height:100%;
+}
+  body{
+    /* The image used */
+    background-image: url("../img/hipWallP.jpg");
+    /* Set a specific height */
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+    margin-top: -45px;
+  background-color: #E8E8E8;
+   border: black;
+   border-radius: 25px;
+
+  }
+
+  .panel-body{
+    background-color:#F5F5F5;
+    border-radius: 25px;
+     border: 2px solid #383838;
+  }
+
+  .panel-height {
+    /* height: 400px; */
+  }
+
+  .panel-info{
+    background-color: #F8F8F8;
+
+  }
+}
+
+/* Media query for My Screen inch screens  */
+@media (min-device-width : 1451px) {
+  body,html{
+    height:100%;
+  }
+    body{
+      /* The image used */
+      background-image: url("../img/hipWallP.jpg");
+      /* Set a specific height */
+      /* Position and center the image to scale nicely on all screens */
+      background-position:center;
+      background-repeat:no-repeat;
+      background-size:cover;
+      position:relative;
+    }
+    .panel{
+      margin-top: 80px;
+    background-color: #E8E8E8;
+     border: black;
+     border-radius: 25px;
+
+    }
+
+    .panel-body{
+      background-color:#F5F5F5;
+      border-radius: 25px;
+       border: 2px solid #383838;
+    }
+
+    .panel-height {
+      /* height: 400px; */
+    }
+
+    .panel-info{
+      background-color: #F8F8F8;
+
+    }
+
+}
+
+/* Media query for iphone 6/7/8 */
+@media only screen and (device-width : 375px) and (max-device-width : 667px) {
+  body{
+    /* The image used */
+    background-image: url("../img/hipWallP.jpg");
+    /* Set a specific height */
+    height:700px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+    margin-top: 50%;
+  background-color: #E8E8E8;
+   border: black;
+   border-radius: 25px;
+
+  }
+
+  .panel-body{
+    background-color:#F5F5F5;
+    border-radius: 25px;
+     border: 2px solid #383838;
+  }
+
+  .panel-height {
+    /* height: 400px; */
+  }
+
+  .panel-info{
+    background-color: #F8F8F8;
+
+  }
+}
+
+/* Media query for Galaxy S5*/
+@media only screen and (device-width : 360px) and (max-device-height : 640px) {
+  body{
+    /* The image used */
+    background-image: url("../img/hipWallP.jpg");
+    /* Set a specific height */
+    height:700px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+    margin-top: 50%;
+  background-color: #E8E8E8;
+   border: black;
+   border-radius: 25px;
+
+  }
+
+  .panel-body{
+    background-color:#F5F5F5;
+    border-radius: 25px;
+     border: 2px solid #383838;
+  }
+
+  .panel-height {
+    /* height: 400px; */
+  }
+
+  .panel-info{
+    background-color: #F8F8F8;
+
+  }
+}
+
+
+
+
+/* Media query for iPhone5 */
+@media only screen and (device-width : 320px) and (max-device-height : 568px) {
+  body{
+    /* The image used */
+    background-image: url("../img/hipWallP.jpg");
+    /* Set a specific height */
+    height:700px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+    margin-top: 50%;
+  background-color: #E8E8E8;
+   border: black;
+   border-radius: 25px;
+
+  }
+
+  .panel-body{
+    background-color:#F5F5F5;
+    border-radius: 25px;
+     border: 2px solid #383838;
+  }
+
+  .panel-height {
+    /* height: 400px; */
+  }
+
+  .panel-info{
+    background-color: #F8F8F8;
+
+  }
+}
+
+
+/* Media query for iPhone X */
+@media only screen and (device-width : 375px) and (device-height : 812px) {
+  body{
+    /* The image used */
+    background-image: url("../img/hipWallP.jpg");
+    /* Set a specific height */
+    height:700px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+    margin-top: 70%;
+  background-color: #E8E8E8;
+   border: black;
+   border-radius: 25px;
+
+  }
+
+  .panel-body{
+    background-color:#F5F5F5;
+    border-radius: 25px;moss moss e sir lyrics
+     border: 2px solid #383838;
+  }
+
+  .panel-height {
+    /* height: 400px; */
+  }
+
+  .panel-info{
+    background-color: #F8F8F8;
+
+  }
+}
+
+
+/* Media query for iPad  */
+@media only screen and (device-height : 1024px) {
+  body{
+    /* The image used */
+    background-image: url("../img/hipWallP.jpg");
+    /* Set a specific height */
+    height:700px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+    margin-top: 20%;
+  background-color: #E8E8E8;
+   border: black;
+   border-radius: 25px;
+
+  }
+
+  .panel-body{
+    background-color:#F5F5F5;
+    border-radius: 25px;
+     border: 2px solid #383838;
+  }
+
+  .panel-height {
+    /* height: 400px; */
+  }
+
+  .panel-info{
+    background-color: #F8F8F8;
+
+  }
+}
+
+/* Media query for iPad Pro */
+@media only screen and (device-height : 1366px) {
+  body{
+    /* The image used */
+    background-image: url("../img/hipWallP.jpg");
+    /* Set a specific height */
+    height:700px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+    margin-top: 20%;
+  background-color: #E8E8E8;
+   border: black;
+   border-radius: 25px;
+
+  }
+
+  .panel-body{
+    background-color:#F5F5F5;
+    border-radius: 25px;
+     border: 2px solid #383838;
+  }
+
+  .panel-height {
+    /* height: 400px; */
+  }
+
+  .panel-info{
+    background-color: #F8F8F8;
+
+  }
+}

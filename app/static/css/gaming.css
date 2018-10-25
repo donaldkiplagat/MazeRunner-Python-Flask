@@ -1,7 +1,7 @@
- #question2-1, #question2-2, #question2-3{
+#question2-0, #question2-1, #question2-2, #question2-3{
   display:none;
 }
- #question3-0, #question3-1, #question3-2, #question3-3, #question3-4, #question3-5, #question3-6, #question3-7{
+#question3-0, #question3-1, #question3-2, #question3-3, #question3-4, #question3-5, #question3-6, #question3-7{
   display:none;
 }
 #question4-0, #question4-1, #question4-2, #question4-3, #question4-4, #question4-5, #question4-6, #question4-7,
@@ -24,37 +24,38 @@
   border: 2px;
   padding: 20px;
   background-color: rgba(0,0,0, 0.7);
-
-
+  width:1200px;
+  margin: auto;
 }
 .jumbotron{
   margin-bottom: 0px;
-  height: 195px;
+  height: 155px;
   width: 550px;
   margin: auto;
 
-  /* background-image: url(../img/jumbotron.jpg); */
-  text-align: center;
-  font-size: 21px;
+  background-image: url("../img/jumbotron.jpg");
   background-position: 0% 51%;
 
   background-size: cover;
   background-repeat: no-repeat;
 
 }
-
-#gaming{
-  /* background-image: url('../img/thumb-1920-413551.png'); */
+body,html{
+  height: 100%;
+}
+body{
+  background-image: url('../img/thumb-1920-413551.png');
   height:950px;
+  /* Position and center the image to scale nicely on all screens */
   background-position:center;
+  background-position: 0% 30%;
   background-repeat:no-repeat;
   background-size:cover;
   position:relative;
-  text-align: center;
-  font-size: 21px;
 }
 .container{
-
+  text-align: center;
+  font-size: 21px;
 }
 button{
   font-size: 20px;
@@ -65,4 +66,339 @@ h2{
 }
 h4{
   font-size: 30px;
+}
+
+
+
+
+/* Media Query for Tecno Spark */
+@media only screen and (min-device-width : 720px){
+  body,html{
+    height:100%;
+    }
+    body{
+    /* The image used */
+    background-image: url("../img/godpixel2xl.jpg");
+    height:950px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+  margin-top: 50%;
+  background-color:black;
+  color: white;
+  font-size: 50px;
+  border-radius: 8px;
+  border: 2px;
+  padding: 8px;
+  background-color: rgba(0,0,0, 0.7);
+  }
+}
+
+/* Media query for 15.4 inch screens  */
+@media (min-device-width : 1281px) {
+body,html{
+  height:100%;
+}
+body{
+  /* The image used */
+  background-image: url("../img/thumb-1920-413551.png");
+  /* Set a specific height */
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+}
+.panel{
+margin-top: -4%;
+background-color:black;
+color: white;
+font-size: 50px;
+border-radius: 8px;
+border: 2px;
+padding: 8px;
+background-color: rgba(0,0,0, 0.7);
+}
+
+}
+
+/* Media query for My Screen inch screens  */
+@media (min-device-width : 1451px) {
+  body,html{
+    height:100%;
+  }
+  body{
+    /* The image used */
+    background-image: url("../img/thumb-1920-413551.png");
+    /* Set a specific height */
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+  margin-top: 2%;
+  background-color:black;
+  color: white;
+  font-size: 50px;
+  border-radius: 8px;
+  border: 2px;
+  padding: 8px;
+  background-color: rgba(0,0,0, 0.7);
+  }
+
+}
+
+/* Media Query for iphone6/7/8 */
+@media only screen and (device-width : 375px) and (max-device-width : 667px) {
+  body,html{
+    height:100%;
+    }
+    body{
+    /* The image used */
+    background-image: url("../img/godiphone7.jpg");
+    height:950px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+  margin-top: 50%;
+  background-color:black;
+  color: white;
+  font-size: 50px;
+  border-radius: 8px;
+  border: 2px;
+  padding: 8px;
+  background-color: rgba(0,0,0, 0.7);
+  }
+}
+
+/* Media Query for GalaxyS5 */
+@media only screen and (device-width : 360px) and (max-device-height : 640px) {
+  body,html{
+    height:100%;
+    }
+    body{
+    /* The image used */
+    background-image: url("../img/gods5.jpg");
+    height:950px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+  margin-top: 50%;
+  background-color:black;
+  color: white;
+  font-size: 50px;
+  border-radius: 8px;
+  border: 2px;
+  padding: 8px;
+  background-color: rgba(0,0,0, 0.7);
+  }
+}
+
+/* Media Query for Pixel2 */
+@media only screen and (device-width : 411px) and (max-device-height : 731px) {
+  body,html{
+    height:100%;
+    }
+    body{
+    /* The image used */
+    background-image: url("../img/godpixel2.jpg");
+    height:950px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+  margin-top: 50%;
+  background-color:black;
+  color: white;
+  font-size: 50px;
+  border-radius: 8px;
+  border: 2px;
+  padding: 8px;
+  background-color: rgba(0,0,0, 0.7);
+  }
+}
+
+/* Media Query for Pixel2XL */
+@media only screen and (device-height : 823px) {
+  body,html{
+    height:100%;
+    }
+    body{
+    /* The image used */
+    background-image: url("../img/godpixel2xl.jpg");
+    height:950px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+  margin-top: 50%;
+  background-color:black;
+  color: white;
+  font-size: 50px;
+  border-radius: 8px;
+  border: 2px;
+  padding: 8px;
+  background-color: rgba(0,0,0, 0.7);
+  }
+}
+
+/* Media Query for iPhone 5 */
+@media only screen and (device-width : 320px) and (max-device-height : 568px) {
+  body,html{
+    height:100%;
+    }
+    body{
+    /* The image used */
+    background-image: url("../img/godiphone5.jpg");
+    height:950px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+  margin-top: 50%;
+  background-color:black;
+  color: white;
+  font-size: 50px;
+  border-radius: 8px;
+  border: 2px;
+  padding: 8px;
+  background-color: rgba(0,0,0, 0.7);
+  }
+}
+
+
+/* Media Query for iPhone 7 Plus*/
+@media only screen and (device-width : 414px) and (max-device-height : 736px) {
+  body,html{
+    height:100%;
+    }
+    body{
+    /* The image used */
+    background-image: url("../img/godiphone7plus.jpg");
+    height:950px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+  margin-top: 50%;
+  background-color:black;
+  color: white;
+  font-size: 50px;
+  border-radius: 8px;
+  border: 2px;
+  padding: 8px;
+  background-color: rgba(0,0,0, 0.7);
+  }
+}
+
+
+
+/* Media Query for iPhone X*/
+@media only screen  and (device-height : 812px) {
+  body,html{
+    height:100%;
+    }
+    body{
+    /* The image used */
+    background-image: url("../img/godiphonex.jpg");
+    height:950px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+  margin-top: 50%;
+  background-color:black;
+  color: white;
+  font-size: 50px;
+  border-radius: 8px;
+  border: 2px;
+  padding: 8px;
+  background-color: rgba(0,0,0, 0.7);
+  }
+}
+
+
+/* Media Query for iPad*/
+@media only screen  and (device-height : 1024px) {
+  body,html{
+    height:100%;
+    }
+    body{
+    /* The image used */
+    background-image: url("../img/godipad.jpg");
+    height:950px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+  margin-top: 20%;
+  background-color:black;
+  color: white;
+  font-size: 50px;
+  border-radius: 8px;
+  border: 2px;
+  padding: 8px;
+  background-color: rgba(0,0,0, 0.7);
+  }
+}
+
+/* Media Query for iPad Pro*/
+@media only screen  and (device-height : 1366px) {
+  body,html{
+    height:100%;
+    }
+    body{
+    /* The image used */
+    background-image: url("../img/godipadpro.jpg");
+    height:950px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  .panel{
+  margin-top: 20%;
+  background-color:black;
+  color: white;
+  font-size: 50px;
+  border-radius: 8px;
+  border: 2px;
+  padding: 8px;
+  background-color: rgba(0,0,0, 0.7);
+  }
 }
