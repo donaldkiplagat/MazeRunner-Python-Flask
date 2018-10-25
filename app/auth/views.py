@@ -34,7 +34,7 @@ def register():
         db.session.add(user)
         db.session.commit()
 
-        mail_message("Welcome to My Blog","email/welcome_user",user.email,user=user)
+        mail_message("Welcome to MazeRunner","email/welcome_user",user.email,user=user)
 
         return redirect(url_for('auth.login'))
         title = "New Account"
@@ -49,7 +49,7 @@ def register_admin():
         db.session.add(user)
         db.session.commit()
 
-        mail_message("My Blog Admin","email/welcome_admin",user.email,user=user)
+        mail_message("MazeRunner Admin","email/welcome_admin",user.email,user=user)
 
         return redirect(url_for('auth.login'))
         title = "New Account"

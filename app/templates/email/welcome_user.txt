@@ -1,3 +1,6 @@
 Hello {{user.username}}
 Welcome to MazeRunner!
 Do you think you have what it takes to conquer our never ending mazes? Well login and test your capabilities.
+
+With Regards,
+MazeRunner Team

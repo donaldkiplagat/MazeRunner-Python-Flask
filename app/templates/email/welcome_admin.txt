@@ -1,0 +1,6 @@
+Hello {{user.username}}
+Welcome to MazeRunner!
+You have been registered as a superuser (admin) of our application.You have more privileges than normal user and we hope you'll use them wisely.
+
+With Regards,
+MazeRunner Team
