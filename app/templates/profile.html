@@ -2,13 +2,36 @@
 {% import 'macros.html' as macro%}
 {% import "bootstrap/wtf.html" as wtf %}
 
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <link rel="shortcut icon" href="https://icon2.kisspng.com/20180412/xiw/kisspng-paper-sunset-shimmer-quill-cutie-mark-crusaders-bo-write-5acf53a3231648.3205577215235368031437.jpg">
+{% endblock %}
 
-<head>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-</head>
+{% block content %}
+<br><br><br><br><br>
+<p>{{user.username}}</p>
+
+<div class="row">
+  <img  src="../static/img/badge1.png" width="340" height="340" >
+  <img  src="../static/img/badge2.png" width="340" height="340" >
+  <img  src="../static/img/badge3.png" width="340" height="340" >
+  <img  src="../static/img/badge4.png" width="340" height="340" >
+  <img  src="../static/img/badge5.png" width="340" height="340" >
+
+</div>
+
+<div class="well text-center" style="width:30rem;" >
+
+    <div class="card" style="width: 20rem;">
+      <div class="card-body">
+        <h3 class="card-title">Username: {{user.username}}</h3>
+      </div>
+    </div>
+  </div>
 
 
-{% block content%}
+
 <br><br><br>
 <div class="table-size">
 
@@ -146,12 +169,12 @@ table tr td#position:first-child::before {
 }
 body{
   /* The image used */
-  background-image: url("../static/img/maze.jpg");
+  /* background-image: url("../static/img/maze.jpg"); */
   /* Set a specific height */
   height:950px;
   /* Position and center the image to scale nicely on all screens */
   background-position: 0% 10%;
-  background-repeat:no-repeat;
+  background-repeat:repeat;
   background-size:cover;
   position:relative;
 }
@@ -161,6 +184,15 @@ body{
   background-color: rgba(0,0,0, 0.7);
 
 }
+.well{
+  margin:auto;
+  background-color: black;
+  color:white;
+  background-color: rgba(0,0,0, 0.7);
+
+}
 
 </style>
+
+
 {% endblock %}

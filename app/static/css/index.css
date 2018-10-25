@@ -33,7 +33,7 @@ body{
   height:950px;
   /* Position and center the image to scale nicely on all screens */
   background-position:center;
-  background-repeat:no-repeat;
+  background-repeat:repeat;
   background-size:cover;
   position:relative;
 }
@@ -45,6 +45,8 @@ h4{
   height: 250px;
   width: 600px;
 }
+
+
 /* .hide{
   display:none;
 } */
@@ -58,7 +60,7 @@ h4{
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:cover;
     position:relative;
     margin
@@ -84,7 +86,7 @@ h4{
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:cover;
     position:relative;
     margin
@@ -115,7 +117,7 @@ body,html{
 
     /* Position and center the image to scale nicely on all screens */
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:cover;
     position:relative;
   }
@@ -157,7 +159,7 @@ body,html{
     /* Set a specific height */
     /* Position and center the image to scale nicely on all screens */
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:cover;
     position:relative;
   }
@@ -198,7 +200,7 @@ body,html{
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:cover;
     position:relative;
     margin
@@ -226,7 +228,7 @@ body,html{
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:cover;
     position:relative;
     margin
@@ -255,7 +257,7 @@ body,html{
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:cover;
     position:relative;
     margin
@@ -285,7 +287,7 @@ body,html{
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:cover;
     position:relative;
 
@@ -311,7 +313,7 @@ body,html{
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:cover;
     position:relative;
     margin
@@ -339,7 +341,7 @@ body,html{
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:cover;
     position:relative;
 
@@ -369,7 +371,7 @@ body,html{
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:cover;
     position:relative;
     margin
@@ -396,7 +398,7 @@ body,html{
     height:1000px;
     /* Position and center the image to scale nicely on all screens */
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:cover;
     position:relative;
 

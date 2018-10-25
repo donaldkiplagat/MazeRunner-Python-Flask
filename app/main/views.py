@@ -63,6 +63,20 @@ def leaderboard():
     title="Leaderboard"
     return render_template('leaderboard.html',title=title,marvel=marvel,gaming=gaming,anime=anime,music=music)
 
+@main.route("/profile",methods=['GET','POST'])
+@login_required
+def profile():
+
+    marvel = Score.query.filter_by(username=current_user.username).order_by(Score.username,Score.score.asc()).all()
+    gaming = Score.query.filter_by(username=current_user.username).order_by(Score.username,Score.score.asc()).all()
+    anime = Score.query.filter_by(username=current_user.username).order_by(Score.username,Score.score.asc()).all()
+    music = Score.query.filter_by(username=current_user.username).order_by(Score.username,Score.score.asc()).all()
+
+
+
+    title="Profile"
+    return render_template('profile.html',title=title,marvel=marvel,gaming=gaming,anime=anime,music=music,user=current_user)
+
 
 @main.route('/background_process_test')
 def background_process_test():

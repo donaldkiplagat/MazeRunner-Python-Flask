@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/marvel.css')}}">
     <script  src="https://code.jquery.com/jquery-3.3.1.js" ></script>
     <script src= "{{url_for('static',filename='js/marvel.js')}}"></script>
-    <link rel="shortcut icon" href="https://icon2.kisspng.com/20171220/zhe/game-controller-png-image-5a3a7acd9a4bb5.404273831513781965632.jpg" >
+    <link rel="icon" type="image/png" href="{{url_for('static',filename='img/marvelfavicon.png')}}" >
 {% endblock %}
 
 
@@ -23,29 +23,27 @@
     <div class="panel panel-info panel-height responsive">
       <button id="quit" onclick="location.href='/'"  class="btn-danger btn-lg">Quit</button>
 
-
-      <div id="question1-0">
+      <div id="question1">
 
     <p>What's the real name of Abominatrix?</p>
-    <button id="quest1-0"class="btn-danger btn-lg points" onclick="add_points()">Jasper Keaton</button>
-    <button id="quest1-1"class="btn-danger btn-lg points" onclick="add_points()">Florence Sharpless</button>
-    <button id="quest1-2"class="btn-danger btn-lg points" onclick="add_points()">Boliver Trask</button>
-    <button id="quest1-3"class="btn-danger btn-lg points" onclick="add_points()">Agatha Harktric</button>
+    <button id="quest1-0"class="btn-danger btn-lg points" >Jasper Keaton</button>
+    <button id="quest1-1"class="btn-danger btn-lg points" >Florence Sharpless</button>
+    <button id="quest1-2"class="btn-danger btn-lg points" >Boliver Trask</button>
+    <button id="quest1-3"class="btn-danger btn-lg points" >Agatha Harktric</button>
   </div>
 
 {% for question in questions %}
 
   <div id="{{question.div}}">
     <p>{{question.question}}</p>
-    <button id="{{question.button1}}"  class="btn-danger btn-lg points" onclick="add_points()">{{question.choice1}}</button>
-    <button id="{{question.button2}}"  class="btn-danger btn-lg points" onclick="add_points()">{{question.choice2}}</button>
+    <button id="{{question.button1}}"  class="btn-danger btn-lg points" >{{question.choice1}}</button>
+    <button id="{{question.button2}}"  class="btn-danger btn-lg points" >{{question.choice2}}</button>
   </div>
 {% endfor %}
 
 
 <div id="win">
     <h4>Congratulations! You've conquered the maze!</h4>
-    <img src="#">
 </div>
 
 </div>

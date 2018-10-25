@@ -5,10 +5,19 @@
 {% block styles%}
     {{ super() }}
     <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
-    <link rel="shortcut icon" href="https://icon2.kisspng.com/20180412/xiw/kisspng-paper-sunset-shimmer-quill-cutie-mark-crusaders-bo-write-5acf53a3231648.3205577215235368031437.jpg">
+    <link rel="icon" type="image/png" href="{{url_for('static',filename='img/maze.png')}}" >
 {% endblock %}
 
 {% block content %}
+<br><br><br>
+<div class="row">
+  <img class="card-img-top img-fluid" src="../static/img/badge1.png" width="350" height="350" >
+  <img class="card-img-top img-fluid" src="../static/img/badge2.png" width="350" height="350" >
+  <img class="card-img-top img-fluid" src="../static/img/badge3.png" width="350" height="350" >
+  <img class="card-img-top img-fluid" src="../static/img/badge4.png" width="350" height="350" >
+  <img class="card-img-top img-fluid" src="../static/img/badge5.png" width="350" height="350" >
+
+</div>
 
 
 {% endblock %}

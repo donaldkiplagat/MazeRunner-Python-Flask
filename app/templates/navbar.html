@@ -10,7 +10,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="/">
-        <img alt="MazeRunner" src="https://icon2.kisspng.com/20171221/kaw/call-of-duty-download-png-5a3bf2d2e6e162.5058671815138782269457.jpg"   width="30" height="30" class="d-inline-block align-top">
+        <img alt="MazeRunner" src="{{url_for('static',filename='img/alienware.png')}}"   width="30" height="30" class="d-inline-block align-top">
       </a>
     </div>
 
@@ -27,7 +27,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <ul class="nav navbar-nav navbar-right">
           {% if current_user.is_authenticated %}
-          <li><a href="#">{{current_user.username}}</a></li>
+          <li><a href="/profile">{{current_user.username}}</a></li>
           <li><a href="{{url_for('auth.logout')}}">Sign Out</a></li>
           {% else %}
           <li role="separator" class="divider"></li>
